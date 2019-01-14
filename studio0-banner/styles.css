@@ -35,8 +35,8 @@ h1 {
 
 section {
   margin-left: 17%;
-  display: inline-flex;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: inline-grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   margin-bottom: auto;
 
 }
