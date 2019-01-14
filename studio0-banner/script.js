@@ -58,6 +58,7 @@ function draw() {
 fill(250,70,70);
 rect(0,0,width, height);
 
+fill(100,50,50);
 noStroke();
 ellipse( mouseX, mouseY, 50,50);
 
