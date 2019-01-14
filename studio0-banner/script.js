@@ -58,6 +58,9 @@ function draw() {
 fill(250,70,70);
 rect(0,0,width, height);
 
+noStroke();
+ellipse( mouseX, mouseY, 50,50);
+
   // //creating parallax in x
   // if (mouseX > -100 && mouseX <= 50) {
   //   //instatiating x,y
@@ -75,12 +78,12 @@ rect(0,0,width, height);
 
 
 
-  // mapping values to match with of canvas
-  cHue = map(mouseX, 0, 800, 0, 360);
-  //changing Hue of Image with mouseX
-  image(img, 0, 0);
-    image(bg, 0, 0);
-  // tint(cHue, 70, 90);
+  // // mapping values to match with of canvas
+  // cHue = map(mouseX, 0, 800, 0, 360);
+  // //changing Hue of Image with mouseX
+  // image(img, 0, 0);
+  //   image(bg, 0, 0);
+  // // tint(cHue, 70, 90);
 
   //
   // //drawing Icons
