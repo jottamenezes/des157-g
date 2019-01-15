@@ -91,7 +91,7 @@ ellipse( mouseX, mouseY, 50,50);
   //
   // //drawing Icons
 
-  if (mouseisPressed == true) {
+  if (mouseIsPressed) {
 
 
   translate(-60,-15);
