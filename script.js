@@ -36,7 +36,7 @@ var myCanvas = createCanvas (800,250);
 myCanvas.parent('mySketch');
   colorMode(HSB, 360, 100, 100);
 
-  img = loadImage("bannerProcessing/coloredBanner.jpg");
+
 
   // iconA = loadShape("iconA.svg");
 
@@ -55,8 +55,8 @@ function draw() {
 
 //testing canvas
 
-fill(250,70,70);
-rect(0,0,width, height);
+// fill(250,70,70);
+// rect(0,0,width, height);
 
 fill(100,50,50);
 noStroke();
@@ -79,12 +79,12 @@ ellipse( mouseX, mouseY, 50,50);
 
 
 
-  // // mapping values to match with of canvas
-  // cHue = map(mouseX, 0, 800, 0, 360);
-  // //changing Hue of Image with mouseX
-  // image(img, 0, 0);
-  //   image(bg, 0, 0);
-  // // tint(cHue, 70, 90);
+  // mapping values to match with of canvas
+  cHue = map(mouseX, 0, 800, 0, 360);
+  //changing Hue of Image with mouseX
+
+    image(bg, 0, 0);
+  tint(cHue, 70, 90);
 
   //
   // //drawing Icons

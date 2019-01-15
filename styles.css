@@ -1,68 +1,117 @@
-/* Stylizing header */
-header {
-  max-width: 100%;
-  /* position: absolute; */
-  margin-bottom: 5%;
-  /* background-color: green; */
-}
-
 body {
+  /* display: block;
+  margin: auto; */
   max-width: 1366px;
   max-height: 768px;
   background-color: hsl(192, 31%, 93%);
   font-size: .8em;
-color: hsl(210, 25%, 24%);
+  color: hsl(210, 25%, 24%);
   font-family: Montserrat, sans-serif;
 }
 
+header {
+  max-width: 100%;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+/* Stylizing banner */
 #mySketch {
-   display: block;
+  display: block;
   /* text-align: center;  */
   margin: auto;
-
   width: 800px;
   height: 250px;
-  /* box-shadow: 0 0 30px hsla(0, 0%, 0%, 0.15) */
+  box-shadow: 0 0 50px hsla(0, 0%, 0%, 0.25)
 }
 
 h1 {
-  margin-right: 15%;
+  padding-right: 15.5%;
+  margin: 1% 5% 1% 5%;
   text-align: right;
-  font-size: 3em;
-  font-style: italic;
+  font-size: 4em;
   font-weight: 600;
+  font-variant-caps: titling-caps;
+}
+
+h2 {
+  margin: 1%;
+  text-align: left;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-decoration: overline dotted orange;
 }
 
 section {
-  margin-left: 17%;
-  display: inline-grid;
+  display: inline-block;
+  margin: 3% 3% 3% 3%;
+  padding: 0 3.5% 0 3.5%;
+  border-style: solid;
+  border: 2px;
+  display: inline-table;
   /* grid-template-columns: 1fr 1fr 1fr; */
   margin-bottom: auto;
+}
+
+ul {
+  padding-left: 0;
+  font-size: 3em;
+  text-align: left;
+  letter-spacing: -2px;
+  list-style-type: none;
+  line-height: 20px;
+  margin-bottom: 70px;
+}
+
+
+nav a:link {
+
+
+
+  background-color: orange;
+  color: white;
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.15);
+
+  font-weight: bolder;
+  font-variant-caps: all-petite-caps;
+  text-decoration: none;
+  padding: 2% 10% 2% 10%;
+  font-size: 1.2em;
+
 
 }
 
-li {
-  display: block;
+nav a:hover {
+    padding: 2% 10% 2% 10%;
+  background-color: darkorange;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.15);
+
+
+
 }
+
 
 footer {
+  background-color: hsl(203, 68%, 14%);
+  text-align: center;
   position: fixed;
   bottom: 0px;
   width: 100%;
-  margin-top: 5%;
-  padding: 5% 0 5% 0;
-  background-color: hsl(203, 48%, 14%);
-  text-align: center;
+  margin-top: 2%;
+  padding: 2% 1.5% 2% 1.5%;
 }
 
 a:link {
   padding: 0 2% 0 2%;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
 }
 
 a:hover {
-  padding: 0 2% 0 2%;
-  font-size: 1.52em;
-  color: grey;
+  font-size: 1.2em;
+  color: orange;
 }
