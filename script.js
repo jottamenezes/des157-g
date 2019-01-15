@@ -93,11 +93,14 @@ ellipse( mouseX, mouseY, 50,50);
 
   if (mouseisPressed == true) {
 
-  // translate(-60,-15);
-  //       scale(1.15);
-      image(iconB, width/2-50, height/2 -50);
-  }else{
 
+  translate(-60,-15);
+        scale(1.15);
+      image(iconB, width/2-50, height/2 -50);
+          tint(cHue, 70, 90);
+  }else{
+     noTint();
   image(iconA, width/2-50, height/2 -50);
+    image(iconA, width/2-50, height/2 -50);
 
 }
