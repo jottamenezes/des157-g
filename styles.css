@@ -65,35 +65,24 @@ ul {
   margin-bottom: 70px;
 }
 
-
 nav a:link {
-
-
-
   background-color: orange;
   color: white;
   box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.15);
-
   font-weight: bolder;
   font-variant-caps: all-petite-caps;
   text-decoration: none;
   padding: 2% 10% 2% 10%;
   font-size: 1.2em;
-
-
 }
 
 nav a:hover {
-    padding: 2% 10% 2% 10%;
+  padding: 2% 10% 2% 10%;
   background-color: darkorange;
   font-size: 1.1em;
   color: white;
   box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.15);
-
-
-
 }
-
 
 footer {
   background-color: hsl(203, 68%, 14%);
