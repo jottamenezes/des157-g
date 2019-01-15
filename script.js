@@ -1,8 +1,3 @@
-
-
-
-
-
 /*
 This processing sketch is part of the first assignment for
  DES 157 - Interactive Media II class at UC Davis.
@@ -11,7 +6,7 @@ This processing sketch is part of the first assignment for
  Jean Menezes
  */
 
- console.log('reading js');
+console.log('reading js');
 
 //bgImage
 var bg;
@@ -31,9 +26,9 @@ var iconB;
 
 
 function setup() {
-var myCanvas = createCanvas (800,250);
+  var myCanvas = createCanvas(800, 250);
 
-myCanvas.parent('mySketch');
+  myCanvas.parent('mySketch');
   colorMode(HSB, 360, 100, 100);
 
 
@@ -55,24 +50,22 @@ function draw() {
   x = -100;
   y = -31;
 
-//testing canvas
+  //testing canvas
 
-// fill(250,70,70);
-// rect(0,0,width, height);
+  // fill(250,70,70);
+  // rect(0,0,width, height);
 
-fill(100,50,50);
-noStroke();
-ellipse( mouseX, mouseY, 50,50);
+
 
   //creating parallax in x
   if (mouseX > -100 && mouseX <= 50) {
     //instatiating x,y
 
-   x = map(mouseX, 0, 2000, -100, 50);
+    x = map(mouseX, 0, 2000, -100, 50);
     //x = mouseX/7-100;
 
     image(bg, x, y);
-  } else if (mouseX> 50 && mouseX <= 750) {
+  } else if (mouseX > 50 && mouseX <= 750) {
     x = -90;
   } else {
     x = map(mouseX, 750, 3460, -90, 800);
@@ -85,8 +78,14 @@ ellipse( mouseX, mouseY, 50,50);
   cHue = map(mouseX, 0, 800, 0, 360);
   //changing Hue of Image with mouseX
 
-    image(bg, 0, 0);
+  image(bg, 0, 0);
   tint(cHue, 70, 90);
+
+  //mouseIndicator
+
+  fill(100, 50, 50, 180);
+  noStroke();
+  ellipse(mouseX, mouseY, 20, 20);
 
   //
   // //drawing Icons
@@ -94,15 +93,16 @@ ellipse( mouseX, mouseY, 50,50);
   if (mouseIsPressed) {
 
 
-  translate(-60,-15);
-        scale(1.15);
-      image(iconB, width/2-50, height/2 -50);
-          tint(cHue, 70, 90);
-  }else{
-     noTint();
-  image(iconA, width/2-50, height/2 -50);
-    image(iconA, width/2-50, height/2 -50);
+    tint(cHue, 70, 90);
 
-}
+    translate(-60, -15);
+    scale(1.15);
+    image(iconB, width / 2 - 50, height / 2 - 50);
+  } else {
+    noTint();
+    image(iconA, width / 2 - 50, height / 2 - 50);
+    image(iconA, width / 2 - 50, height / 2 - 50);
+
+  }
 
 }
