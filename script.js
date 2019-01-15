@@ -29,7 +29,7 @@ function setup() {
   var myCanvas = createCanvas(800, 250);
 
   myCanvas.parent('mySketch');
-  colorMode(HSB, 360, 100, 100);
+  colorMode(HSB, 360, 100, 100, 100);
 
 
 
@@ -58,34 +58,39 @@ function draw() {
 
 
   //creating parallax in x
-  if (mouseX > -100 && mouseX <= 50) {
+  if (mouseX > width/8 - 100 && mouseX <= width/16) {
     //instatiating x,y
 
-    x = map(mouseX, 0, 2000, -100, 50);
+    x = map(mouseX, 0, width*2.5, width/8 - 100, width/16);
     //x = mouseX/7-100;
 
     image(bg, x, y);
-  } else if (mouseX > 50 && mouseX <= 750) {
-    x = -90;
+  } else if (mouseX > width/16 && mouseX <= width-50) {
+    x = -width/10 - 10;
   } else {
-    x = map(mouseX, 750, 3460, -90, 800);
+    x = map(mouseX, width-50, width*4.5, -width/10 - 10, width);
   }
 
 
 
 
   // mapping values to match with of canvas
-  cHue = map(mouseX, 0, 800, 0, 360);
+  cHue = map(mouseX, 0, width, 0, width/2 - 40);
   //changing Hue of Image with mouseX
 
   image(bg, 0, 0);
   tint(cHue, 70, 90);
 
   //mouseIndicator
-
-  fill(200, 50, 80, 100);
+  noCursor();
+  push();
+  blendMode(BLEND);
+  fill(200, 10, 95, 50);
   noStroke();
   ellipse(mouseX, mouseY, 20, 20);
+  ellipse(mouseX, mouseY, 10, 10);
+  pop();
+
 
   //
   // //drawing Icons
