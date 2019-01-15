@@ -62,19 +62,19 @@ fill(100,50,50);
 noStroke();
 ellipse( mouseX, mouseY, 50,50);
 
-  // //creating parallax in x
-  // if (mouseX > -100 && mouseX <= 50) {
-  //   //instatiating x,y
-  //
-  //  x = map(mouseX, 0, 2000, -100, 50);
-  //   //x = mouseX/7-100;
-  //
-  //   image(bg, x, y);
-  // } else if (mouseX> 50 && mouseX <= 750) {
-  //   x = -90;
-  // } else {
-  //   x = map(mouseX, 750, 3460, -90, 800);
-  // }
+  //creating parallax in x
+  if (mouseX > -100 && mouseX <= 50) {
+    //instatiating x,y
+
+   x = map(mouseX, 0, 2000, -100, 50);
+    //x = mouseX/7-100;
+
+    image(bg, x, y);
+  } else if (mouseX> 50 && mouseX <= 750) {
+    x = -90;
+  } else {
+    x = map(mouseX, 750, 3460, -90, 800);
+  }
 
 
 
