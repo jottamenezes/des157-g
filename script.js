@@ -22,11 +22,11 @@ var x;
 //control bgYPosition
 var y;
 
-var img;
+var iconA;
 
-//vectorIcon
+var iconB;
 
-// PShape iconA, iconB;
+
 
 
 
@@ -43,6 +43,8 @@ myCanvas.parent('mySketch');
 
   //instatiating bgImage
   bg = loadImage("bannerProcessing/coloredBanner2.jpg");
+  iconA = loadImage("bannerProcessing/iconA.png");
+  iconB = loadImage("bannerProcessing/iconB.png");
 }
 
 function draw() {
@@ -88,18 +90,14 @@ ellipse( mouseX, mouseY, 50,50);
 
   //
   // //drawing Icons
-  // iconA.disableStyle();  // Ignore the colors in the SVG
-  // fill(255, 200);    // Set the SVG fill to blue
-  // noStroke();
-  // if (mousePressed == true) {
-  //     iconB.disableStyle();  // Ignore the colors in the SVG
-  // fill(255, 200);    // Set the SVG fill to blue
-  // noStroke();
+
+  if (mouseisPressed == true) {
+
   // translate(-60,-15);
   //       scale(1.15);
-  //     shape(iconB, width/2-50, height/2 -50);
-  // }else{
-  //
-  // shape(iconA, width/2-50, height/2 -50);}
+      image(iconB, width/2-50, height/2 -50);
+  }else{
+
+  image(iconA, width/2-50, height/2 -50);
 
 }
