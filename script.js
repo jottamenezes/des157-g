@@ -83,7 +83,7 @@ function draw() {
 
   //mouseIndicator
 
-  fill(100, 50, 50, 180);
+  fill(200, 50, 80, 100);
   noStroke();
   ellipse(mouseX, mouseY, 20, 20);
 
