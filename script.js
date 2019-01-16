@@ -78,7 +78,7 @@ function draw() {
   cHue = map(mouseX, 0, width, 0, width/2 - 40);
   //changing Hue of Image with mouseX
 
-  image(bg, 0, 0);
+  // image(bg, 0, 0);
   tint(cHue, 70, 90);
 
   //mouseIndicator
