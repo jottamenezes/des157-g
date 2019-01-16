@@ -67,8 +67,10 @@ function draw() {
     image(bg, x, y);
   } else if (mouseX > width/16 && mouseX <= width-50) {
     x = -width/10 - 10;
+      image(bg, x, y);
   } else {
     x = map(mouseX, width-50, width*4.5, -width/10 - 10, width);
+      image(bg, x, y);
   }
 
 
