@@ -57,21 +57,21 @@ function draw() {
 
 
 
-  //creating parallax in x
-  if (mouseX > width/8 - 100 && mouseX <= width/16) {
-    //instatiating x,y
-
-    x = map(mouseX, 0, width*2.5, width/8 - 100, width/16);
-    //x = mouseX/7-100;
-
-    image(bg, x, y);
-  } else if (mouseX > width/16 && mouseX <= width-50) {
-    x = -width/10 - 10;
-      image(bg, x, y);
-  } else {
-    x = map(mouseX, width-50, width*4.5, -width/10 - 10, width);
-      image(bg, x, y);
-  }
+  // //creating parallax in x
+  // if (mouseX > width/8 - 100 && mouseX <= width/16) {
+  //   //instatiating x,y
+  //
+  //   x = map(mouseX, 0, width*2.5, width/8 - 100, width/16);
+  //   //x = mouseX/7-100;
+  //
+  //   image(bg, x, y);
+  // } else if (mouseX > width/16 && mouseX <= width-50) {
+  //   x = -width/10 - 10;
+  //     image(bg, x, y);
+  // } else {
+  //   x = map(mouseX, width-50, width*4.5, -width/10 - 10, width);
+  //     image(bg, x, y);
+  // }
 
 
 
@@ -80,7 +80,7 @@ function draw() {
   cHue = map(mouseX, 0, width, 0, width/2 - 40);
   //changing Hue of Image with mouseX
 
-  // image(bg, 0, 0);
+  image(bg, 0, 0);
   tint(cHue, 70, 90);
 
   //mouseIndicator
