@@ -1,0 +1,20 @@
+<!-- ASSIGNMENT STUDIO 0
+This HTML Document is for the asssigment Studio0,
+part of exercise for the class Interactive Media at UCDavis, California. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>"jeanMenezes-assignment1"</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="styles.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js">
+  </script>
+</head>

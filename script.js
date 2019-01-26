@@ -7,19 +7,19 @@ This processing sketch is part of the first assignment for
  */
 
 console.log('reading js');
+console.log('change2');
+
 
 //bgImage
 var bg;
 //controlHue
 var cHue;
 //control bgXPosition
-var x;
+var x, y;
 //control bgYPosition
-var y;
 
-var iconA;
 
-var iconB;
+var iconA, iconB;
 
 
 
@@ -56,30 +56,38 @@ function draw() {
   // rect(0,0,width, height);
 
 
+  image(bg, x, y);
+
 
   //creating parallax in x
-  if (mouseX > width/8 - 100 && mouseX <= width/16) {
+
+if (mouseX < - 101) {
+    x = map(mouseX, 0, 2000, - 100, 50);
+      // image(bg, - 101, y);
+} else if (mouseX >= - 80 && mouseX <= 70) {
     //instatiating x,y
 
-    x = map(mouseX, 0, width*2.5, width/8 - 100, width/16);
+    x = map(mouseX, 0, 2000, - 100, 50);
     //x = mouseX/7-100;
 
     image(bg, x, y);
-  } else if (mouseX > width/16 && mouseX <= width-50) {
-    x = -width/10 - 10;
+  } else if (mouseX > 71 && mouseX <= 750) {
+    image(bg, -90, -31);
   } else {
-    x = map(mouseX, width-50, width*4.5, -width/10 - 10, width);
+    x = map(mouseX, 750, 10000, -90, 800);
+    image(bg, x, y);
+      // image(bg, -90, -31);
   }
 
 
+console.log(x);
 
 
   // mapping values to match with of canvas
   cHue = map(mouseX, 0, width, 0, width/2 - 40);
   //changing Hue of Image with mouseX
 
-  image(bg, 0, 0);
-  tint(cHue, 70, 90);
+ tint(cHue, 70, 90);
 
   //mouseIndicator
   noCursor();
