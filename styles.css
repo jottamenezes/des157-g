@@ -1,3 +1,4 @@
+/* CSS for project Mad Libs, part of Studio 1 */
 body {
   /* display: block;
   margin: auto; */
@@ -12,7 +13,7 @@ body {
 
 header {
   width: 100%;
-  max-width:1366px;
+  max-width: 1366px;
   margin-top: 5%;
   margin-bottom: 0%;
 }
@@ -56,11 +57,9 @@ h2 {
   width: -moz-fit-content;
 }
 
-
-
 body>section {
   /* display: inline-block; */
-  width:85%;
+  width: 85%;
   margin: 5% auto;
   /* padding: 0 3.5%; */
   /* border-style: solid; */
@@ -71,21 +70,19 @@ body>section {
   /* margin-bottom: auto; */
 }
 
-
-section section{
+section section {
   /* border-left: solid black 1px; */
-  width:30%;
+  width: 30%;
 }
 
- ul {
-   padding-left: 0.75em;
+ul {
+  padding-left: 0.75em;
   list-style-type: none;
   line-height: 1.1em;
   margin-bottom: 70px;
 }
 
-
-nav a:link{
+nav a:link {
   text-decoration: none;
   color: darkorange;
   padding-left: 0;
@@ -93,12 +90,16 @@ nav a:link{
   letter-spacing: -2px;
   line-height: 1.1em;
   margin-bottom: 70px;
-
 }
+
 nav a:visited {
-    color: darkorange;
-  background-color: orange;
-  color: white;
+  text-decoration: none;
+  color: darkorange;
+  padding-left: 0;
+  font-size: 3em;
+  letter-spacing: -2px;
+  line-height: 1.1em;
+  margin-bottom: 70px;
 }
 
 nav a:hover {
@@ -116,7 +117,6 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-
   padding: 2% 1.5% 2% 1.5%;
 }
 
