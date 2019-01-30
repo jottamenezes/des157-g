@@ -12,7 +12,7 @@ This script is part of the assignment studio 1 for
 
 
 document.querySelector('#create').onclick = processForm;
-// document.querySelector("#r").onclick = resetForm;
+document.querySelector("#reset").onclick = resetForm;
 
 //define process function
 function processForm() {
@@ -30,20 +30,25 @@ function processForm() {
   var festiveHoliday = document.querySelector("#festiveHoliday").value;
 
   // caputre mySpeech
-  var myMsg = document.querySelector("#mySpeech");
+  var mySpeech = document.querySelector("#mySpeech");
   var msgSection = document.querySelector("#tweet");
 
 
   mySpeech.innerHTML =
-    "I would be willing to 'shut down' government if <span style='font-weight: 600; font-size: 1.1em; color:#66a8de'>" +  userCountry + "</span> do not give us " + userMovie +
-    " which includes the " +  movHero1 + "!  Must get rid of " + otherMovie + " ," + otherMovieVillain +  ", & " + marvelCharacter + ". We need "
-+ movHero2 + " coming to our " + festiveHoliday + "!"
+    "I would be willing to 'shut down' government if <span class='userOutput'>" +  userCountry + "</span> do not give us <span class='userOutput'>" + userMovie +
+    "</span>  which includes the <span class='userOutput'>" +  movHero1 + "</span> ! Must get rid of <span class='userOutput'>" + otherMovie + "</span>, <span class='userOutput'>" + otherMovieVillain +  "</span> , & <span class='userOutput'>" + marvelCharacter + "</span> . We need <span class='userOutput'>"
++ movHero2 + "</span>  coming to our <span class='userOutput'>" + festiveHoliday + "</span> !"
 
 
   // // prevent page from reloading
   return false;
 }
 
+
 function resetForm() {
-  msgSection.className = "hide";
+  document.getElementById('myForm').reset();
+
+  document.getElementById("mySpeech").style.visibility = "hidden";
+
+
 }

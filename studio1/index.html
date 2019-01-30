@@ -40,63 +40,63 @@ part of exercise for the class Interactive Media at UCDavis, California. -->
     <section>
       <h2> Create your speech:</h2>
 
-      <form id="styleForm">
+      <form id="myForm">
         <fieldset>
 
-          <input type="text" id="userCountry" value="">
-          <label for="aCountry">Choose a Country</label>
+          <input type="text" id="userCountry" value="" required>
+          <label for="userCountry">Choose a Country</label>
         </fieldset>
 
         <fieldset>
 
-          <input type="text" id="dMovie" value="">
-          <label for="disneyMovie">Disney Movie</label>
+          <input type="text" id="dMovie" value="" required>
+          <label for="dMovie">Disney Movie</label>
         </fieldset>
 
         <fieldset>
 
-          <input type="text" id="movHero1" value="">
-          <label for="movHeroI">Chosen Movie Character I</label>
+          <input type="text" id="movHero1" value="" required>
+          <label for="movHero1">Chosen Movie Character I</label>
         </fieldset>
 
         <fieldset>
 
-          <input type="text" id="otherMovie" value="">
+          <input type="text" id="otherMovie" value="" required>
           <label for="otherMovie">Other Disney Movie</label>
         </fieldset>
 
         <fieldset>
 
-          <input type="text" id="otherMovieVillain" value="">
+          <input type="text" id="otherMovieVillain" value="" required>
           <label for="otherMovieVillain">Other Movie Villain</label>
         </fieldset>
 
         <fieldset>
-          <input type="text" id="marvelCharacter" value="">
+          <input type="text" id="marvelCharacter" value="" required>
           <label for="marvelCharacter">Marvel Character</label>
 
         </fieldset>
 
         <fieldset>
-          <input type="text" id="movHero2" value="">
+          <input type="text" id="movHero2" value="" required>
           <label for="movHero2">Chosen Movie Character II</label>
 
         </fieldset>
 
 
         <fieldset>
-          <input type="text" id="festiveHoliday" value="">
+          <input type="text" id="festiveHoliday" value="" required>
           <label for="festiveHoliday">Festive Holiday</label>
 
         </fieldset>
 
 
-        <button type="submit" onclick="resetForm()">restart</button>
-
-        <button onclick="processForm()" id="create">create speech</button>
-
+          <!-- <button onclick="processForm()" id="create" type="submit" >reset</button> -->
 
       </form>
+      <button type="button" name="reset" id = 'reset' onclick="resetForm()" >reset</button>
+      <button type="button" name="create" id = 'create' onclick="processForm()" >create</button>
+
 
       <!-- creating submit button -->
     </section>
