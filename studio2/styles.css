@@ -24,7 +24,6 @@ header {
 header a {
   text-decoration: none;
   color: hsl(200, 30%, 30%);
-
   font-size: 2em;
   position: relative;
   top: 2.5rem;
@@ -127,7 +126,6 @@ img:hover {
 /* creating closing button to revert state */
 .close {
   font-size: 2em;
-
   z-index: 1;
 }
 
@@ -219,6 +217,13 @@ footer a:hover {
     align-items: center; */
   }
 
+  .imgBox {
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+    /* margin: 1rem; */
+    display: inline-block;
+  }
+
   img {
     width: auto;
     min-width: 100%;
@@ -274,17 +279,16 @@ footer a:hover {
 
   .close {
     font-size: 2.5em;
-
     z-index: 1;
   }
 }
 
 /* media query for desktop */
 @media only screen and (min-width: 1080px) {
-
   body {
     max-width: 1450px;
   }
+
   section {
     width: 100%;
     display: inline-flex;
@@ -307,9 +311,8 @@ footer a:hover {
   }
 
   .h2Fix {
-     position: relative;
-      top: -2.3em;
-
+    position: relative;
+    top: -2.3em;
   }
 
   img {
@@ -368,7 +371,6 @@ footer a:hover {
     top: -4rem;
     left: 0rem;
   }
-
 
   p {
     display: block;
