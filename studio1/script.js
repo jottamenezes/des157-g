@@ -18,6 +18,9 @@ document.querySelector("#reset").onclick = resetForm;
 function processForm() {
   console.log('runningProcess');
 
+  document.getElementById("mySpeech").style.visibility = "visible";
+
+
   // capturing user valur through querySelector
 
   var userCountry = document.querySelector("#userCountry").value;
