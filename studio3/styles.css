@@ -1,0 +1,192 @@
+/* for responsive */
+* {
+   box-sizing: border-box;
+}
+
+/* _______GLENDA's CODPEN */
+
+/* game play area */
+section {
+  height: 320px;
+  padding: 10px;
+  background-color:yellow;
+  margin-bottom:24px;
+}
+
+/* dot that moves */
+div {
+  position:absolute;
+  height:45px;
+  width:45px;
+  background-color:blue;
+  border-radius: 25px;
+  display: block;
+}
+
+/* score and time remaining */
+span {
+  color:white;
+  margin: 24px 12px;
+}
+
+/* reset and fullscreen*/
+/* button {
+  margin: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 0px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #222;
+} */
+img {
+  position:absolute;
+  display:none;
+}
+
+
+
+
+/* _________MINE */
+
+* {
+box-sizing: border-box;
+}
+
+
+
+
+body {
+
+  overflow: hidden;
+  background-color: #66a8de;
+  font-size: 0.9em;
+  color: hsl(210, 25%, 24%);
+  font-family: Montserrat, sans-serif;
+    overflow:hidden;
+}
+
+header {
+  width: 100%;
+  max-width: 1366px;
+  /* margin-top: 5%;
+  margin-bottom: 0%; */
+}
+
+h1 {
+  /* padding-right: 15.5%; */
+  margin: 2% 19% 0% 0%;
+  text-align: right;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+section {
+  /* width: 100%; */
+  display: flex;
+  /* margin-left: 2%; */
+  padding-bottom: 10%;
+}
+
+
+
+
+h2 {
+  margin: 1%;
+  color: white;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 10px;
+  /* flex-wrap: wrap; */
+  /* padding-bottom: %; */
+}
+
+
+
+
+
+button {
+  background-color: #60a0df;
+  border: none;
+  color: white;
+  margin-top: 5%;
+  margin-left: 2%;
+  padding: 2% 7%;
+  display: inline-grid;
+  box-shadow: -3px 3px 12px -3px rgba(0, 0, 0, 0.75);
+
+  /* padding: 4% 0 4% 5%; */
+}
+
+
+p {
+  position: relative;
+  max-width: 700px;
+  min-width: 500px;
+  width: 70%;
+  top: 25%;
+  left: 5%;
+  text-align: left;
+  line-height: 1.85em;
+  font-size: 1.4em;
+}
+
+a:link{
+  position: absolute;
+  text-decoration: none;
+  /* margin-top: 4%; */
+  color: white;
+  /* margin: 4%; */
+  padding: 3%;
+  font-size: 2em;
+  letter-spacing: -2px;
+  line-height: 1.1em;
+    z-index: 1;
+
+}
+
+a:visited{
+    position: absolute;
+    color: white;
+}
+
+a:hover {
+  color: hsl(203, 68%, 14%);
+
+    z-index: 1;
+}
+
+
+
+footer {
+  background-color: hsl(203, 68%, 14%);
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  text-align: center;
+  padding: 2% 1.5% 2% 1.5%;
+}
+
+footer a:link, footer a:visited {
+
+  position: static;
+  letter-spacing: 0px;
+  text-decoration: none;
+  padding: 0 2% 0 2%;
+  font-size: 1.2em;
+  color: white;
+}
+
+footer a:hover {
+  color: darkorange;
+}
+
+.userOutput {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #66a8de;
+}

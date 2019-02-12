@@ -96,7 +96,7 @@ li {
 
 nav a:link {
   text-decoration: none;
-  color: darkorange;
+  color: hsl(203, 68%, 14%);
   padding-left: 0;
   font-size: 3em;
   letter-spacing: -2px;
@@ -106,7 +106,7 @@ nav a:link {
 
 nav a:visited {
   text-decoration: none;
-  color: darkorange;
+    color: hsl(203, 68%, 14%);
   padding-left: 0;
   font-size: 3em;
   letter-spacing: -2px;
@@ -117,7 +117,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: hsl(203, 68%, 14%);
+  color: darkorange;
   padding-left: 0;
   font-size: 3em;
   letter-spacing: -2px;
