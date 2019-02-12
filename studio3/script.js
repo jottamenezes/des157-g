@@ -88,7 +88,7 @@ function countDown() {
   section.style.opacity = count * .075; // darken the screen
   timeLeft.innerHTML = "Time Remaining: " + count; // show remaining time on screen
   if (timeLeft < 10)  {
-    coun.style.color = red;
+    score.style.color = red;
   }
 }
 
