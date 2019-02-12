@@ -1,8 +1,8 @@
 /*
-This script is part of the assignment studio 1 for
+This script is part of the assignment studio 2 for
  DES 157 - Interactive Media II class at UC Davis.
 
- 01/27/19
+ 02/10/19
  Jean Menezes
  */
 
@@ -10,48 +10,39 @@ This script is part of the assignment studio 1 for
 
 'use strict';
 
+var img1 = document.querySelector('#img1');
+var closeButton = document.querySelector('#closeButton');
 
-document.querySelector('#create').onclick = processForm;
-document.querySelector("#reset").onclick = resetForm;
+img1.addEventListener('click', function() {
+  console.log('mousedown on button');
+  img1.style.opacity = "0.07";
+  txt1.style.display = "block";
+  closeButton.style.display = "block";
+  closeButton.style.left = "280px";
+  closeButton.style.top = "80px";
 
-//define process function
-function processForm() {
-  console.log('runningProcess');
-
-  document.getElementById("mySpeech").style.visibility = "visible";
-
-
-  // capturing user valur through querySelector
-
-  var userCountry = document.querySelector("#userCountry").value;
-  var userMovie = document.querySelector("#dMovie").value;
-  var movHero1 = document.querySelector("#movHero1").value;
-  var otherMovie = document.querySelector("#otherMovie").value;
-    var otherMovieVillain = document.querySelector("#otherMovieVillain").value;
-  var marvelCharacter = document.querySelector("#marvelCharacter").value;
-  var movHero2 = document.querySelector("#movHero2").value;
-  var festiveHoliday = document.querySelector("#festiveHoliday").value;
-
-  // caputre mySpeech
-  var mySpeech = document.querySelector("#mySpeech");
-  var msgSection = document.querySelector("#tweet");
+});
 
 
-  mySpeech.innerHTML =
-    "I would be willing to 'shut down' government if <span class='userOutput'>" +  userCountry + "</span> do not give us <span class='userOutput'>" + userMovie +
-    "</span>  which includes the <span class='userOutput'>" +  movHero1 + "</span> ! Must get rid of <span class='userOutput'>" + otherMovie + "</span>, <span class='userOutput'>" + otherMovieVillain +  "</span> , & <span class='userOutput'>" + marvelCharacter + "</span> . We need <span class='userOutput'>"
-+ movHero2 + "</span>  coming to our <span class='userOutput'>" + festiveHoliday + "</span> !"
+var img2 = document.querySelector('#img2');
+
+img2.addEventListener('click', function() {
+  console.log('mousedown on button');
+  img2.style.opacity = "0.07";
+  txt2.style.display = "block";
+  closeButton.style.display = "block";
+  closeButton.style.left = "280px";
+  closeButton.style.top = "500px";
+
+});
 
 
-  // // prevent page from reloading
-  return false;
-}
+var close = document.getElementById('closeButton');
 
-
-function resetForm() {
-  document.getElementById('myForm').reset();
-
-  document.getElementById("mySpeech").style.visibility = "hidden";
-
-
-}
+close.addEventListener('click', function() {
+  close.style.display = "none";
+  img1.style.opacity = "1";
+  img2.style.opacity = "1";
+  txt1.style.display = "none";
+  txt2.style.display = "none";
+})

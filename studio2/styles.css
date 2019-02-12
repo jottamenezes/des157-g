@@ -1,165 +1,189 @@
-
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-
-/* media query for phones */
-@media only screen and (max-width: 468px) {
-
-
-}
-
-/* media query for Tablets */
-@media only screen and (min-width: 769px) {
-
-
-}
-
 
 body {
-  /* display: block;
-  margin: auto; */
-  /* max-width: 1366px;
-  max-height: 768px; */
-  /* background-color: hsl(192, 31%, 93%); */
-  overflow: hidden;
-  background-color: #66a8de;
-  font-size: 0.9em;
+  /* min-width: 400px; */
+  background-color: hsl(192, 31%, 93%);
+  font-size: 1em;
   color: hsl(210, 25%, 24%);
   font-family: Montserrat, sans-serif;
 }
 
 header {
-  width: 100%;
-  max-width: 1366px;
+  background-color: hsl(203, 68%, 14%);
+  padding-bottom: 1rem;
+  /*
+    Ask Glenda to help to figure out the problem with my html file
+  position:  fixed; */
+  background-color: hsl(203, 68%, 14%);
   /* margin-top: 5%;
   margin-bottom: 0%; */
 }
 
+header a {
+  text-decoration: none;
+  color: hsl(200, 30%, 30%);
+  font-size: 2em;
+  position: relative;
+  top: 2.5rem;
+  padding: 2rem;
+  /* padding: 1rem 2rem; */
+}
+
+header a:hover {
+  color: hsl(20, 80%, 60%);
+}
+
 h1 {
   /* padding-right: 15.5%; */
-  margin: 2% 19% 0% 0%;
+  /* margin: 2% 19% 0% 0%; */
+  margin: 1% 10% 0% 0;
+  position: relative;
+  top: -0.6rem;
   text-align: right;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
+  color: hsl(200, 10%, 90%);
 }
 
 section {
   /* width: 100%; */
-  display: flex;
-  margin-left: 2%;
-  padding-bottom: 10%;
+  display: grid;
 }
 
-value {
-  font-size: 2em;
+/* Styling image frame */
+img {
+  /* width: auto; */
+  width: auto;
+  margin: auto;
+  background-color: white;
+  margin: 1rem;
+  border: 0.3rem;
+  border-bottom: 3rem;
+  border-radius: 0.3rem;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  /* margin: 1rem 3rem;
+padding: 1rem 0rem; */
 }
 
-section section {
-  /* margin: 0 2.5% 0 5%; */
-  display: inline-block;
-}
-
-form {
-  margin: 1% 0;
-  font-size: 0.9em;
-  text-align: left;
-  text-decoration: none;
-}
-
-label {
-  padding: 1.5% 0;
-}
-
-h2 {
-  margin: 1%;
-  color: white;
-  padding: 0;
-  line-height: 1.5em;
-  font-size: 1em;
-  font-weight: 600;
-  letter-spacing: 1px;
+/* adding hover effect to images */
+img:hover {
+  background-color: hsl(192, 31%, 93%);
+  transition: background 300ms ease;
   position: relative;
-  bottom: 10px;
-  /* flex-wrap: wrap; */
-  /* padding-bottom: %; */
+  /* top: -10%; */
 }
 
-img {}
-
-#trump {
-  margin: 0;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding-bottom: 60px;
+/* controling position of imageFrames */
+.imgBox {
+  justify-content: center;
+  align-items: center;
 }
 
-
-fieldset {
-  display: flex;
-  flex-wrap: wrap;
-  width: 20%;
-  border: none;
+.movItem {
+  position: relative;
+  top: -4.2rem;
 }
 
-button {
-  background-color: #60a0df;
-  border: none;
-  color: white;
-  margin-top: 10%;
-  margin-left: 5%;
-  padding: 3% 10%;
-  display: inline-grid;
-  box-shadow: -3px 3px 12px -3px rgba(0, 0, 0, 0.75);
-  /* padding: 4% 0 4% 5%; */
+.movItem2 {
+  position: relative;
+  top: -8.2rem;
 }
 
-/* stylizign and positioning tweet BG */
-#tweet {
-  margin: 2% 4%;
-  background-image: url('../studio1/images/tweetBG.jpg');
-  background-repeat: no-repeat;
-  width: 100%;
+.movItem3 {
+  position: relative;
+  top: -12.2rem;
+}
+
+/* changing background of unhovered images */
+.img1 {
+  background-color: hsl(203, 68%, 60%);
+  /* width: auto; */
+}
+
+.img2 {
+  background-color: hsl(140, 50%, 60%);
+}
+
+.img3 {
+  background-color: hsl(10, 80%, 60%);
+}
+
+.img4 {
+  background-color: hsl(210, 20%, 60%);
+}
+
+/* changing display when user clicks on image  */
+#img1 {
+  opacity: 1;
+  filter: alpha(opacity=50);
+}
+
+/* creating closing button to revert state */
+.close {
+  font-size: 2em;
+  z-index: 1;
+}
+
+#closeButton {
+  position: relative;
+  top: 70px;
+  left: 300px;
+  display: none;
+}
+
+#txt1 {
+  display: none;
+  position: relative;
+  top: -400px;
+  left: 70px;
+}
+
+#txt2 {
+  display: none;
+  position: relative;
+  top: -400px;
+  left: 70px;
+}
+
+#txt3 {
+  display: none;
+  position: relative;
+  top: -400px;
+  left: 70px;
+}
+
+#txt4 {
+  display: none;
+  position: relative;
+  top: -400px;
+  left: 70px;
 }
 
 p {
-  position: relative;
-  max-width: 700px;
-  min-width: 500px;
-  width: 70%;
-  top: 25%;
-  left: 5%;
+  margin: 0;
+  padding: 0;
+  width: 45%;
   text-align: left;
-  line-height: 1.85em;
-  font-size: 1.4em;
+  line-height: 1.6em;
+  font-size: 1em;
 }
 
-a:link {
-  text-decoration: none;
-  /* margin-top: 4%; */
-  color: white;
-  /* margin: 4%; */
-  padding: 3%;
-  font-size: 3em;
-  letter-spacing: -2px;
-  line-height: 1.1em;
-}
-
-a:visited {
-  background-color: orange;
-  color: white;
-}
-
-a:hover {
-  color: hsl(203, 68%, 14%);
-  text-decoration: none;
-  margin-top: 4%;
-  padding: 3%;
-  font-size: 3em;
-  letter-spacing: -2px;
-  line-height: 1.1em;
+/* controling name of imges */
+h2 {
+  font-family: 'Amatic SC', cursive;
+  color: hsl(210, 25%, 24%);
+  text-align: center;
+  position: relative;
+  bottom: 5.2rem;
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 footer {
@@ -183,8 +207,176 @@ footer a:hover {
   color: darkorange;
 }
 
-.userOutput {
-  font-weight: 600;
-  font-size: 1.1em;
-  color: #66a8de;
+/* media query for Tablets */
+@media only screen and (min-width: 768px) {
+  section {
+    /* width: 100%; */
+    display: inline-block;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .imgBox {
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+    /* margin: 1rem; */
+    display: inline-block;
+  }
+
+  img {
+    width: auto;
+    min-width: 100%;
+  }
+
+  .movItem {
+    position: relative;
+    top: 0rem;
+  }
+
+  .movItem2 {
+    position: relative;
+    top: -5rem;
+  }
+
+  .movItem3 {
+    position: relative;
+    top: -5rem;
+  }
+
+  h2 {
+    font-family: 'Amatic SC', cursive;
+    color: hsl(210, 25%, 24%);
+    text-align: left;
+    /* position: relative;
+    bottom: 5rem; */
+    padding-left: 3rem;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    text-align: left;
+    line-height: 1.6em;
+    font-size: 1em;
+  }
+
+  .imgBox {
+    justify-content: left;
+  }
+
+  #txt1 {
+    display: none;
+    margin: 0;
+    top: -400px;
+    left: 30px;
+  }
+
+  .close {
+    font-size: 2.5em;
+    z-index: 1;
+  }
+}
+
+/* media query for desktop */
+@media only screen and (min-width: 1080px) {
+  body {
+    max-width: 1450px;
+  }
+
+  section {
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+    padding: 0 2rem 0 0rem;
+  }
+
+  /* section section {
+    display: inline-grid;
+  } */
+  h2 .imgBox {
+    /* margin: 2rem; */
+    position: relative;
+    top: -3.8em;
+    width: auto;
+    display: inline;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .h2Fix {
+    position: relative;
+    top: -2.3em;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .imgBox {
+    width: 100%;
+    position: static;
+    top: 0;
+    padding: 0 1rem 0 1rem;
+    /* margin: 1rem; */
+    display: inline-block;
+  }
+
+  .txtPar {
+    display: inline-grid;
+  }
+
+  .img2 {
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  .img3 {
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  .img4 {
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  #txt1 {
+    position: relative;
+    display: inline-block;
+    top: -4rem;
+    left: 0;
+  }
+
+  #txt2 {
+    position: relative;
+    display: inline-block;
+    top: -4rem;
+    left: 0rem;
+  }
+
+  #txt3 {
+    position: relative;
+    display: inline-block;
+    top: -4rem;
+    left: 0rem;
+  }
+
+  #txt4 {
+    position: relative;
+    display: inline-block;
+    top: -4rem;
+    left: 0rem;
+  }
+
+  p {
+    display: block;
+    margin: 1rem;
+    padding: 0rem 1.5rem;
+    width: 105%;
+    text-align: left;
+  }
 }
