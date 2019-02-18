@@ -1,0 +1,147 @@
+body {
+  /* display: block;
+  margin: auto; */
+  /* max-width: 1366px;
+  max-height: 768px; */
+  background-color: hsl(192, 31%, 93%);
+  /* background-color:purple; */
+  font-size: .8em;
+  color: hsl(210, 25%, 24%);
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 7rem;
+}
+
+header {
+  width: 100%;
+  max-width: 1366px;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+h1 {
+  display: block;
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 600;
+  font-variant-caps: titling-caps;
+}
+
+section {
+  margin: 0 2rem;
+
+}
+
+section section {
+  margin: 2rem 0rem;
+  background-color: white;
+    display: flex;
+
+}
+
+.bgSection {
+  box-shadow: 0 5px 25px hsla(0, 0%, 0%, 0.15);
+
+
+}
+
+img {
+  width: 27%;
+  height: 100%;
+  /* width: 80%; */
+}
+
+.bios {
+  background-color: white;
+  width: 30%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.textBio {
+  margin: 1rem 2.5rem;
+  padding: 0 0.5rem;
+  display: inline-block;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  text-align: left;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-decoration: overline dotted darkorange;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+}
+
+p {
+  margin: 0;
+  font-style: normal;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+li {
+  margin: 0;
+  font-style: normal;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+a {
+  margin: 100px 50px;
+}
+
+a:link {
+  padding-left: 40px;
+  text-decoration: none;
+  color: darkorange;
+  padding-left: 0;
+  font-size: 3em;
+  letter-spacing: -2px;
+  line-height: 1.1em;
+  margin-bottom: 70px;
+}
+
+a:visited {
+  color: darkorange;
+  background-color: orange;
+  color: white;
+}
+
+a:hover {
+  color: hsl(203, 68%, 14%);
+  padding-left: 0;
+  font-size: 3em;
+  letter-spacing: -2px;
+  line-height: 1.1em;
+  margin-bottom: 70px;
+}
+
+footer {
+
+  background-color: hsl(203, 68%, 14%);
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 2% 1.5% 2% 1.5%;
+}
+
+footer a:link, footer a:visited {
+  text-decoration: none;
+  padding: 0 2% 0 2%;
+  font-size: 1.2em;
+  color: white;
+}
+
+footer a:hover {
+  font-size: 1.2em;
+  color: darkorange;
+}
