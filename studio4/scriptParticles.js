@@ -13,6 +13,6 @@ This script is part of the assignment studio 3 for
 console.log("reading js");
 
 
-particlesJS.load('particles-js', 'particles.json', function(){
+particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.json loaded...');
 });

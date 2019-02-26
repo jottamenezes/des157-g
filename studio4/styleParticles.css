@@ -3,7 +3,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #070621;
   font-size: 0.9em;
@@ -17,10 +16,8 @@ body {
   height: 1200px;
 }
 
-
 a:link {
   position: absolute;
-
   text-decoration: none;
   /* margin-top: 4%; */
   color: #153044;
@@ -40,7 +37,6 @@ a:visited {
 a:hover {
   color: darkorange;
   text-decoration: none;
-
   padding: 3%;
   font-size: 2em;
   letter-spacing: -2px;
