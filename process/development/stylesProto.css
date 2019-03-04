@@ -1,134 +1,57 @@
-body {
-  /* display: block;
-  margin: auto; */
-  /* max-width: 1366px;
-  max-height: 768px; */
-  display: block;
-  overflow: auto;
-  background-color: hsl(192, 31%, 93%);
-  /* background-color:purple; */
-  font-size: 1em;
-  color: hsl(210, 25%, 24%);
-  font-family: Montserrat, sans-serif;
-}
-
-header {
-  width: 100%;
-  max-width: 1366px;
-  margin-top: 5%;
-  margin-bottom: 0%;
+* {
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 section {
-  /* display: flex;
- */
-  /* display: inline-flex;
-    flex-wrap: wrap; */
+  padding: 7em;
+  height: calc(100vh - 14em);
+  color: white;
 
-  margin-bottom: 5%;
-
-  /* display: inline; */
-}
-
-
-
-h2 {
-  /* margin: 5% auto; */
-  text-align: left;
-  font-size: 1.5em;
-  letter-spacing: 5px;
-  font-weight: 200;
-  text-transform: uppercase;
-  text-decoration: overline dotted darkorange;
-  margin: 5% 0% 0 5%;
-
-}
-
-img {
-  /* float: left; */
-
-  margin: 5%;
-  /* margin: auto; */
-  width: 90%;
-  height: 90%;
-  box-shadow: 0 5px 25px hsla(0, 0%, 0%, 0.25);
-}
-
-
-.protoSection {
-  display: flex;
-  flex-direction: column;
 
 
 }
 
-.imgProto {
-  min-width: 620px;
-  height: 450px;
+:nth-of-type(1) {
+ background: rgb(70, 185, 204);
 }
 
-#protoBlock {
-  display: flex;
+
+:nth-of-type(2) {
+ background: rgb(133, 8, 240);
+}
+
+:nth-of-type(3) {
+ background: rgb(227, 148, 54);
+}
+
+
+.imageCircle {
+    position: absolute;
+  top: calc(100vh/2);
+  
+  width: calc(100vw/2);
+  height: calc(100vh/2);
+
+  border-radius: 50%;
+  background-color: rgb(61, 65, 69);
+
+
+
+  /* transform: translate(50%); */
+}
+
+h1 {
+  text-align: center;
+ font-size: 5.5em;
 }
 
 p {
-
-  text-align: left;
-    width: 90%;
-  font-size: 1.15em;
-  line-height: 1.6em;
-  margin-left: 5%;
-  /* margin-bottom: 10%; */
-
+ font-size: 1.5em;
 }
 
-a {
-  margin: 100px 50px;
-}
 
-a:link {
-  padding-left: 40px;
-  text-decoration: none;
-  color: darkorange;
-  padding-left: 0;
-  font-size: 3em;
-  letter-spacing: -2px;
-  line-height: 1.1em;
-  margin-bottom: 70px;
-}
-
-a:visited {
-  color: darkorange;
-  background-color: orange;
-  color: white;
-}
-
-a:hover {
-  color: hsl(203, 68%, 14%);
-  padding-left: 0;
-  font-size: 3em;
-  letter-spacing: -2px;
-  line-height: 1.1em;
-  margin-bottom: 70px;
-}
-
-footer {
-  background-color: hsl(203, 68%, 14%);
-  text-align: center;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  padding: 2% 1.5% 2% 1.5%;
-}
-
-footer a:link, footer a:visited {
-  text-decoration: none;
-  padding: 0 2% 0 2%;
-  font-size: 1.2em;
-  color: white;
-}
-
-footer a:hover {
-  font-size: 1.2em;
-  color: darkorange;
-}
+/* ___ CSS for other projects */
