@@ -1,10 +1,10 @@
 {
   "particles": {
     "number": {
-      "value": 110,
+      "value": 100,
       "density": {
         "enable": true,
-        "value_area": 500
+        "value_area": 10
       }
     },
     "color": {
@@ -26,7 +26,7 @@
       }
     },
     "opacity": {
-      "value": 0.8,
+      "value": 0.2,
       "random": true,
       "anim": {
         "enable": true,
