@@ -7,7 +7,7 @@ body {
   background-color: #070621;
   font-size: 0.9em;
   color: hsl(210, 25%, 24%);
-  font-family: Montserrat, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   overflow: hidden;
 }
 
@@ -24,11 +24,13 @@ h1 {
   top: -0.6rem;
   text-align: right;
   font-size: 5em;
-  font-weight: 600;
+  font-weight: 300;
   color: hsl(200, 80%, 90%);
 }
 
-
+#logoImg {
+  opacity: 50%;
+}
 
 a:link {
   position: absolute;
@@ -36,43 +38,42 @@ a:link {
   /* margin-top: 4%; */
   color: #153044;
   /* margin: 4%; */
-  padding: 3%;
+  padding: 1%;
   font-size: 2em;
-  letter-spacing: -2px;
-  line-height: 1.1em;
+
+
   margin: 1%;
 }
 
 a:visited {
-  background-color: orange;
+  background-color: darkorange;
   color: #153044;
 }
 
 a:hover {
   color: darkorange;
   text-decoration: none;
-  padding: 3%;
-  font-size: 2em;
-  letter-spacing: -2px;
-  line-height: 1.1em;
+
+
 }
 
 footer {
-  background-color: hsl(203, 68%, 14%);
+  /* background-color: hsl(203, 78%, 14%); */
+  text-decoration: none;
   width: 100%;
   bottom: 0px;
   position: fixed;
-  text-align: center;
-  padding: 2% 1.5% 2% 1.5%;
+  text-align: right;
+  padding: 1.5% 0;
 }
 
 footer a:link, footer a:visited {
   position: static;
-  letter-spacing: 0px;
-  text-decoration: none;
-  padding: 0 2% 0 2%;
+  padding: 0;
+
+
   font-size: 1.2em;
-  color: white;
+  color: hsl(203, 67%, 24%);
 }
 
 footer a:hover {
