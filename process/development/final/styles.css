@@ -19,7 +19,6 @@ body {
 .cardContainer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +33,7 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
-  overflow: scroll; }
+  overflow-x: scroll; }
 
 .cardBox {
   position: relative;
@@ -43,16 +42,24 @@ body {
   height: auto;
   /* transform: translate(-50%, -50%); */ }
 
+#firstBox {
+  margin-left: 15%; }
+
+.imgBox {
+  position: relative; }
+
+.cardImg {
+  width: 1000px; }
+
 h1 {
-  /* padding-right: 15.5%; */
-  /* margin: 2% 19% 0% 0%; */
-  /* margin: 1% 10% 0% 0;
   position: absolute;
-  top: -0.6rem;
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   font-size: 5em;
-  font-weight: 300;
-  color: hsl(200, 80%, 90%); */ }
+  font-weight: 600;
+  color: #d1ecfa; }
 
 #logoImg {
   opacity: 50%; }
