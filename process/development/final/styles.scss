@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+height: 100%;
+  background-color: #070621;
+  font-size: 0.9em;
+  color: hsl(210, 25%, 24%);
+  font-family: 'Cormorant Garamond', serif;
+
+
+
+}
+
+
+
+
+#particles-js {
+  width: 100%;
+  height: 1200px;
+}
+
+.cardContainer {
+   box-sizing: border-box;
+   margin: 3%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  overflow: scroll;
+}
+
+.cardBox {
+  position: relative;
+  padding: 2%;
+width:auto;
+height:auto;
+
+
+
+  /* transform: translate(-50%, -50%); */
+}
+
+h1 {
+  /* padding-right: 15.5%; */
+  /* margin: 2% 19% 0% 0%; */
+  /* margin: 1% 10% 0% 0;
+  position: absolute;
+  top: -0.6rem;
+  text-align: right;
+  font-size: 5em;
+  font-weight: 300;
+  color: hsl(200, 80%, 90%); */
+}
+
+#logoImg {
+  opacity: 50%;
+}
+
+a:link {
+  position: absolute;
+  text-decoration: none;
+  /* margin-top: 4%; */
+  color: #153044;
+  /* margin: 4%; */
+  padding: 1%;
+  font-size: 2em;
+
+
+  margin: 1%;
+}
+
+a:visited {
+  background-color: darkorange;
+  color: #153044;
+}
+
+a:hover {
+  color: darkorange;
+  text-decoration: none;
+
+
+}
+
+footer {
+  /* background-color: hsl(203, 78%, 14%); */
+  text-decoration: none;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  text-align: right;
+  padding: 1.5% 0;
+}
+
+footer a:link, footer a:visited {
+  position: static;
+  padding: 0;
+
+
+  font-size: 1.2em;
+  color: hsl(203, 67%, 24%);
+}
+
+footer a:hover {
+  color: darkorange;
+}

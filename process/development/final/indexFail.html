@@ -1,0 +1,129 @@
+<!-- ASSIGNMENT FINAL PROJECT
+This HTML Document is for the Final Project,
+part of the Interactive Media at UCDavis, California. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>"The Big Phive"</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <link href="glider.css" rel="stylesheet" type="text/css">
+  <link href="styles.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+  <!-- Setting up h1 and back button -->
+  <header>
+    <a href="../../../index.html"><img src="images/bigPhiveLogo.png" alt="Big Phive Home" style="width:150px;height:auto;" id="logoImg"></a>
+
+
+    <!-- <button type="button" name="create">create</button> -->
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <!-- creating section for form entry -->
+
+  <div class="glider-contain multiple">
+    <h1>User Testimonials</h1>
+    <button class="glider-prev">
+
+      <!-- <img src="images/arrowForwardBWhite.png" alt="Back Arrow"> -->
+    </button>
+
+    <div class="glider">
+      <figure>
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </blockquote>
+        <figcaption>
+          John Doe
+        </figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </blockquote>
+        <figcaption>
+          John Doe
+        </figcaption>
+      </figure>
+
+      <figure>
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </blockquote>
+        <figcaption>
+          John Doe
+        </figcaption>
+      </figure>
+
+
+    </div>
+
+    <button class="glider-next">
+
+      <!-- <img src="images/arrowForwardBWhite.png" alt="Back Arrow" style="width:30px;height:auto;" > -->
+    </button>
+    <div id="dots" class="glider-dots">
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- end of slider -->
+
+
+
+
+
+  <!-- Linking footer to email -->
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="script.js"></script>
+
+  <script src="glider.js"></script>
+
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 2,
+      draggable: true,
+      dots: '#dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: 'glider-next'
+      }
+
+
+    });
+  </script>
+
+
+</body>
+
+
+
+</html>
