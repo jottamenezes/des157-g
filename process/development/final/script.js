@@ -22,7 +22,7 @@ console.log("reading js");
 
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.json loaded...');
-    textBox.style.display = "block";
+  textBox.style.display = "block";
 });
 
 
@@ -33,71 +33,87 @@ particlesJS.load('particles-js', 'particles.json', function() {
 // getting Hover for aesthetics
 
 var hoverCard1 = document.querySelector('#aesthetics');
+var hoverCard2 = document.querySelector('#metaphysics');
 var img1 = document.querySelector('#imgCard1');
-var titleLink = document.querySelector('h1');
+var img2 = document.querySelector('#imgCard2');
+
+
 var textBox = document.querySelector('.textBox');
+var sectionTitle = document.querySelector('.cardTitle');
+var sectionDescription = document.querySelector('.cardInfo');
 
+sectionTitle.innerHTML = "Aesthetics";
+sectionDescription.innerHTML = "The greatest questions we dared to ask, what is Beauty? Is it really on the eye of the beholder?";
 
+// CARDS TRANSITIONS
+
+//CARD 1
+
+img1.addEventListener('mouseover', function() {
+  sectionTitle.innerHTML = "Aesthetics";
+  sectionDescription.innerHTML = "The greatest questions we dared to ask, what is Beauty? Is it really on the eye of the beholder?";
+
+});
 
 
 hoverCard1.addEventListener('mouseover', function() {
-
-    img1.src = "images/aestheticsBGHover.png";
-
-    img1.style.opacity = 1;
-
-      textBox.style.display = "block";
-
-      textBox.style.left = "70px";
-
-
+  img1.src = "images/aestheticsBGHover.png";
+  img1.style.opacity = 1;
+  textBox.style.display = "block";
+  textBox.style.left = "100px";
   textBox.style.opacity = "1";
-
 
 });
 
-
 hoverCard1.addEventListener('mouseout', function() {
-  textBox.style.left = "50px",
 
 
-    textBox.style.opacity = "1",
-
-
-  img1.src = "images/aestheticsBG.png"
-
-img1.style.opacity = 0.7;
+  textBox.style.left = "70px",
+    textBox.style.opacity = "0",
+    img1.src = "images/aestheticsBG.png"
+  img1.style.opacity = 0.7;
 });
 
 hoverCard1.addEventListener('click', function() {
-  textBox.style.left = "50px",
-
-textBox.style.display = "none";
-    textBox.style.opacity = "1",
-
-
-  img1.src = "images/aestheticsBG.png"
+  textBox.style.left = "100px",
+    textBox.style.display = "none";
+  textBox.style.opacity = "1",
+    img1.src = "images/aestheticsBG.png"
 
 
 });
-// function toggleImages() {
-//
-//   if (img1.src === "images/aestheticsBGHover") {
-//     img1.animate([
-//   // keyframes
-//   { transform: 'translateX(0px)' },
-//   { transform: 'translateX(30px)' },
-//   {opacity: '0'},
-//   {opacity: '1'},
-// ], {
-//   // timing options
-//   duration: 1000,
-//   iterations: 1,
-// });
-//
-//
-//   } else {
-//
-//
-//   }
-// }
+
+
+//CARD 2
+
+img2.addEventListener('mouseover', function() {
+  sectionTitle.innerHTML = "Metaphysics";
+  sectionDescription.innerHTML = "The greatest questions we dared to ask, what is the Self? What is a Homunculus?";
+
+});
+
+
+hoverCard2.addEventListener('mouseover', function() {
+
+  img2.src = "images/metaphysicsBGHover.png";
+  img2.style.opacity = 1;
+  textBox.style.display = "block";
+  textBox.style.left = "1140px";
+  textBox.style.opacity = "1";
+
+});
+
+hoverCard2.addEventListener('mouseout', function() {
+  textBox.style.left = "1110px",
+    textBox.style.opacity = "0",
+    img2.src = "images/metaphysicsBG.png"
+  img2.style.opacity = 0.7;
+});
+
+hoverCard2.addEventListener('click', function() {
+
+
+    img2.src = "images/metaphysicsBG.png"
+
+
+});
