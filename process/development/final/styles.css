@@ -10,14 +10,23 @@ body {
   background-color: #070621;
   font-size: 0.9em;
   color: #2e3d4d;
-  font-family: 'Cormorant Garamond', serif; }
+  font-family: 'Cormorant Garamond', serif;
+  overflow: hidden;
+  min-height: 1000px; }
+
+#logoImg {
+  opacity: 1; }
+
+  #logoImg:hover {
+    opacity: .5; }
 
 #particles-js {
   width: 100%;
   height: 1200px; }
 
 .cardContainer {
-  -webkit-box-sizing: border-box;
+  padding-top: 10%;
+
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,38 +42,120 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  overflow-y: hidden; }
 
 .cardBox {
   position: relative;
   padding: 2%;
   width: auto;
   height: auto;
-  /* transform: translate(-50%, -50%); */ }
+ }
 
 #firstBox {
-  margin-left: 15%; }
+  margin-left: 10%; }
 
-.imgBox {
-  position: relative; }
+.hoverTrigger {
+  background-color: white;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  z-index: 2;
+
+
+   }
 
 .cardImg {
-  width: 1000px; }
 
-h1 {
+  width: 1000px;
+  animation-fill-mode: forwards;
+  position: relative;
+  opacity: .8;
+  left: 0;
+    transition: all 0.5s ease;
+
+  }
+
+.textBox {
   position: absolute;
+  top: 30px;
+  left: 100px;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  font-size: 5em;
+  flex-direction: column;
+    display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.cardTitle {
+  position: absolute;
+  top: 0px;
+  font-size: 6rem;
   font-weight: 600;
+  color: white;
+
+}
+
+.cardInfo {
+  position: absolute;
+  top: 160px;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
   color: #d1ecfa; }
 
-#logoImg {
-  opacity: 50%; }
+/*LINKS*/
+button {
+  position: absolute;
+  top: 480px;
+  display: flex;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  width: 40%;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: #e5eaf0;
+  color: #2c2739;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  transition: background 250ms ease-in-out, transform 150ms ease, -webkit-transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+button:hover,
+button:focus {
+  background: #242736;
+  color: white;
+  }
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px; }
+
+button:active {
+
+  transform: scale(0.99); }
 
 a:link {
+  font-family: 'Montserrat';
   position: absolute;
   text-decoration: none;
   /* margin-top: 4%; */
