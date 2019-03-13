@@ -35,9 +35,15 @@ particlesJS.load('particles-js', 'particles.json', function() {
 var hoverCard1 = document.querySelector('#aesthetics');
 var hoverCard2 = document.querySelector('#metaphysics');
 var hoverCard3 = document.querySelector('#epistemology');
+var hovercard4 = document.querySelector('#ethics');
+var hovercard5 = document.querySelector('#logic');
+
 var img1 = document.querySelector('#imgCard1');
 var img2 = document.querySelector('#imgCard2');
 var img3= document.querySelector('#imgCard3');
+var img4= document.querySelector('#imgCard4');
+var img5= document.querySelector('#imgCard5');
+
 
 var textBox = document.querySelector('.textBox');
 var sectionTitle = document.querySelector('.cardTitle');
@@ -122,7 +128,7 @@ hoverCard2.addEventListener('click', function() {
 
 
 
-//CARD 2
+//CARD 3
 
 img3.addEventListener('mouseover', function() {
   sectionTitle.innerHTML = "Epistemology";
@@ -152,6 +158,77 @@ hoverCard3.addEventListener('click', function() {
 
 
   img3.src = "images/epistemologyBG.png"
+    textBox.style.display = "none";
+
+});
+
+
+//CARD 4
+
+img4.addEventListener('mouseover', function() {
+  sectionTitle.innerHTML = "Ethics";
+  sectionDescription.innerHTML = "The greatest questions we dared to ask, what is the right thing to do? Is there an universal right way to live?";
+
+});
+
+
+hovercard4.addEventListener('mouseover', function() {
+
+  img4.src = "images/EthicsBGHover.png";
+  img4.style.opacity = 1;
+  textBox.style.display = "block";
+  textBox.style.left = "3240px";
+  textBox.style.opacity = "1";
+
+});
+
+hovercard4.addEventListener('mouseout', function() {
+  textBox.style.left = "3210px",
+    textBox.style.opacity = "0",
+    img4.src = "images/EthicsBG.png"
+  img4.style.opacity = 0.7;
+});
+
+hovercard4.addEventListener('click', function() {
+
+
+  img4.src = "images/EthicsBG.png"
+    textBox.style.display = "none";
+
+});
+
+
+
+//CARD 4
+
+img5.addEventListener('mouseover', function() {
+  sectionTitle.innerHTML = "Logic";
+  sectionDescription.innerHTML = "The greatest questions we dared to ask, what is reason? Is there a a reason to live rationaly?";
+
+});
+
+
+hovercard5.addEventListener('mouseover', function() {
+
+  img5.src = "images/logicBGHover.png";
+  img5.style.opacity = 1;
+  textBox.style.display = "block";
+  textBox.style.left = "4300px";
+  textBox.style.opacity = "1";
+
+});
+
+hovercard5.addEventListener('mouseout', function() {
+  textBox.style.left = "4170px",
+    textBox.style.opacity = "0",
+    img5.src = "images/logicBG.png"
+  img5.style.opacity = 0.7;
+});
+
+hovercard5.addEventListener('click', function() {
+
+
+  img5.src = "images/logicBG.png"
     textBox.style.display = "none";
 
 });
